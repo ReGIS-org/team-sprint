@@ -1,18 +1,26 @@
 Use Case eEcology
 
+Description:
 Gemaakt annotaties visualizeren + gedrag annoteren
 
 Actors:
 Ornitholoog wil gedrag van vogel classificeren/annoteren op basis van accelerometer
 
 Preconditions:
-Vogeldata
+- Bird data
 
 Flow:
 
 
 
 Postconditions:
-Visualizatie van pad 
+- Visualizatie van pad 
 - Kleuren voor herkend gedrag in pad
-- 
+
+
+
+Links:
+- https://github.com/NLeSC/eEcology-Annotation-UI
+- http://nlesc.github.io/eEcology-Annotation-UI/demo/demo-na.html
+- https://vimeo.com/106796321
+- http://www.uva-bits.nl/
