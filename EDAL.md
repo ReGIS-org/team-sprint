@@ -14,8 +14,18 @@ java -jar ncWMS2-standalone.jar
 # results can be found under: ncWMS Frontpage
 ```
 
-The docker file documented in the ncWMS documentation is not available on dockerhub, so we used [this dockerfile](https://hub.docker.com/r/pamtrak06/ncwms/).
+## Docker
+The docker file documented in the ncWMS documentation is not available on dockerhub, so we used [this dockerfile](https://github.com/axiom-data-science/docker-ncwms).
 
+`docker pull axiom/docker-ncwms`
+
+```bash
+$ docker run \
+    -d \
+    -p 80:8080 \
+    -p 443:8443 \
+    axiom/docker-ncwms
+ ```
 
 ## WMS API
 The API provided by ncWMS includes the default WMS specification, and additional parameters that control the visuals, e.g. the colormap. The API specification can be found [here](https://reading-escience-centre.gitbooks.io/ncwms-user-guide/content/04-usage.html). 
