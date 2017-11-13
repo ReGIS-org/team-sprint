@@ -40,6 +40,15 @@ $ docker run \
  
 Note that saved data stored on a docker container may disappear after the container is stopped.
 
+## Alongside WebDAV docker
+The paths to data can also be external URLs. For example, to host and read from a webdav server:
+
+```
+docker run  -d -e USERNAME=webdav -e PASSWORD=webdav -v /path/to/data/:/var/webdav -p 8888:80 morrisjobke/webdav
+```
+
+Then the URL to a file on the web server is `http://webdav:webdav@172.17.42.1:8888/webdav/data.nc`
+
 ## WMS API
 The API provided by ncWMS includes the default WMS specification, and additional parameters that control the visuals, e.g. the colormap. The API specification can be found [here](https://reading-escience-centre.gitbooks.io/ncwms-user-guide/content/04-usage.html). 
 
