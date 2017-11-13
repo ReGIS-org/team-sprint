@@ -1,10 +1,16 @@
-Use Case eEcology
+Use Cases eEcology - Stefan Verhoeven
+
+
+Use case 1: data annotation
 
 Description:
-Gemaakt annotaties visualizeren + gedrag annoteren
+The goal of eEcology is understanding behavior of different species, types and genders of birds.
+Birds are tagged with GPS tracking devices to track their movement and behaviour over space and time.
 
-Actors:
-Ornitholoog wil gedrag van vogel classificeren/annoteren op basis van accelerometer
+
+Actor:
+- Biologist focused on behaviour who wants to annotate gps tracking data 
+
 
 Preconditions:
 - Bird data
