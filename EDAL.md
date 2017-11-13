@@ -19,3 +19,8 @@ The docker file documented in the ncWMS documentation is not available on docker
 
 ## WMS API
 The API provided by ncWMS includes the default WMS specification, and additional parameters that control the visuals, e.g. the colormap. The API specification can be found [here](https://reading-escience-centre.gitbooks.io/ncwms-user-guide/content/04-usage.html). 
+
+## DataCatalogue
+ncWMS provides an admin interface where you can add data. The admin page talks to the [NcwmsCatalogue](https://github.com/Reading-eScience-Centre/ncwms/blob/master/src/main/java/uk/ac/rdg/resc/edal/ncwms/NcwmsCatalogue.java). This is an implementation of the [WMSCatalogue](https://github.com/Reading-eScience-Centre/edal-java/blob/master/wms/src/main/java/uk/ac/rdg/resc/edal/wms/WmsCatalogue.java) and an extension of the [DataCatalogue](https://github.com/Reading-eScience-Centre/edal-java/blob/master/xml-catalogue/src/main/java/uk/ac/rdg/resc/edal/catalogue/DataCatalogue.java).
+
+An example of how the catalogue is being used to update the config, including adding files, can be found in the [NcwmsAdminServlet class](https://github.com/Reading-eScience-Centre/ncwms/blob/master/src/main/java/uk/ac/rdg/resc/edal/ncwms/NcwmsAdminServlet.java#L254). 
