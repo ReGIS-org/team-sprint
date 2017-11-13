@@ -1,18 +1,21 @@
 Use Case CartoDB
 
-carto.com (stefan heeft een Carto Docker container)
-
+Description:
 Van tabel naar kaart
 Visualizatie van elementen
 Knop met analyse
 
 Actor:
 
-
-Precondition:
-
+Preconditions:
 
 Flow:
 
+Exceptions:
 
-Postcondition:
+Postconditions:
+
+Links:
+- https://carto.com/builder/
+- https://lifewatch.inbo.be/blog/posts/forward-trajectory-visualizations.html
+- https://lifewatch.inbo.be/blog/posts/cartodb-tracking-data-tutorial.html

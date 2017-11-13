@@ -1,16 +1,21 @@
 Use Case Via Appia (Pointclouds)
 
-
+Description:
+Person selects location (tile) on minimap and receives 3D view of Via Appia with option to query details on nearby objects
 
 Actor:
 
-
-
 Preconditions:
-
 
 Flow:
 
+Exceptions:
 
 Postconditions:
 
+Links:
+- https://www.esciencecenter.nl/via-appia
+- viaappia.esciencecenter.nl
+- http://mappingtheviaappia.nl/3dgis/
+- https://github.com/NLeSC/collab-demos/blob/master/demos/viaappia/README.md
+- https://github.com/NLeSC/PattyData

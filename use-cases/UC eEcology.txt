@@ -17,12 +17,11 @@ Preconditions:
 
 Flow:
 
-
+Exceptions:
 
 Postconditions:
 - Visualizatie van pad 
 - Kleuren voor herkend gedrag in pad
-
 
 
 Links:

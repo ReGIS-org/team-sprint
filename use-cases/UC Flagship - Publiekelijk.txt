@@ -1,5 +1,7 @@
 Use Case Flagship
 
+Description:
+
 Researchers can claim local geodata patches with their model
 Need Common Vocabulary
 Curse of Locality
@@ -15,5 +17,11 @@ Flow:
 - Click on tile
 - Visualize known predictions/results/info for tile
 
+Exceptions:
+- 
+
 Postconditions:
 - Visualizatie
+
+Links:
+- 
