@@ -1,0 +1,19 @@
+Use Case Flagship
+
+Researchers can claim local geodata patches with their model
+Need Common Vocabulary
+Curse of Locality
+Wikipedia voor modellen
+
+Actors:
+Wetenschappers (Hydrologen)
+
+Preconditons:
+
+
+Flow:
+- 
+
+
+Postconditions:
+

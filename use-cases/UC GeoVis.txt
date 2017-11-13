@@ -1,0 +1,14 @@
+Use Case GeoVis
+
+
+Actor:
+
+
+Flow:
+Parameter-invoer
+Berekening
+Visualizatie van resultaten
+Interactie via muis
+
+Niet geinteresseerd in gebruikersvriendelijkheid - vrij strict qua workflow
+

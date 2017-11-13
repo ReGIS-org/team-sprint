@@ -1,0 +1,27 @@
+DynaSlum - Beleidsmaker
+
+Actors:
+Wetenschappers probeert modellen te verbeteren. Data is een ground truth census: wie woont er, wat verdienen ze, religie. 
+Op basis van een slum-model probeert wetenschapper te voorspellen hoe de slum verandert (en kan het valideren a.h.v. census data). 
+
+Preconditions:
+- Validated model
+- Beleid parameters
+- Visualizatiesettings
+- Beleidsmaker kennis van model/beleidparameters
+
+Flow:
+- Load validated model
+- Set beleid parameters
+- Run simulatie
+- Display predictie
+- Display verandering sinds begin (groei over tijd)
+
+Exceptions:
+- Onmogelijke combinatie van beleidsparameters
+- Iets veranderen aan model dat niet mogelijk is
+
+Postconditions:
+Visual analysis of prediction with ground truth on map
+- Compositie (gezinnen, werkers)
+- Migratie tussen slums (wat als beleid een bedrijf in slum zet)

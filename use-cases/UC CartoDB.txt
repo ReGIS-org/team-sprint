@@ -1,0 +1,18 @@
+Use Case CartoDB
+
+carto.com (stefan heeft een Carto Docker container)
+
+Van tabel naar kaart
+Visualizatie van elementen
+Knop met analyse
+
+Actor:
+
+
+Precondition:
+
+
+Flow:
+
+
+Postcondition:

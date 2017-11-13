@@ -1,0 +1,25 @@
+DynaSlum - Wetenschapper
+
+
+Actors:
+Wetenschappers probeert modellen te verbeteren. Data is een ground truth census: wie woont er, wat verdienen ze, religie. 
+Op basis van een slum-model probeert wetenschapper te voorspellen hoe de slum verandert (en kan het valideren a.h.v. census data). 
+
+Preconditions:
+- Census data (shape slum, people chars, migratiecijfers)
+- Beleid/Model parameters
+- Validatie metrieken
+
+Flow:
+- Upload census data
+- Set model parameters
+- Run simulatie
+- Display predictie samen met ground truth
+- Valideer model (error tussen model en data)
+
+Exceptions:
+- Census data in wrong format
+
+Postconditions:
+Visual analysis of prediction with ground truth on map
+- Diff plaatje van simulatie en census data

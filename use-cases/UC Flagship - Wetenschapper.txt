@@ -1,0 +1,21 @@
+Use Case Flagship
+
+Actor:
+- Wetenschappers (Hydro/Geo-logen)
+
+Preconditions
+- Data
+- Model
+
+Flow:
+- Select tile
+- Supply model
+- Regis runs simulation
+- Display results
+- Compare results to known info for tile
+- Suggest other models/tiles
+
+Postconditions:
+- Visualizations of results
+
+

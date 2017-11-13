@@ -1,0 +1,18 @@
+Use Case eEcology
+
+Gemaakt annotaties visualizeren + gedrag annoteren
+
+Actors:
+Ornitholoog wil gedrag van vogel classificeren/annoteren op basis van accelerometer
+
+Preconditions:
+Vogeldata
+
+Flow:
+
+
+
+Postconditions:
+Visualizatie van pad 
+- Kleuren voor herkend gedrag in pad
+- 
