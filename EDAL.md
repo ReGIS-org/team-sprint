@@ -2,6 +2,18 @@
 EDAL can be used to set up a WMS service (Web map service).
 The easiest way is using the [ncWMS](https://github.com/Reading-eScience-Centre/ncwms) application.
 
+```
+curl -L -O https://github.com/Reading-eScience-Centre/ncwms/releases/download/ncwms-2.2.11/ncWMS2-standalone.jar
+java -jar ncWMS2-standalone.jar
+# open in web browser: localhost:8080
+# click on: Admin interface (requires login)
+# add under Datasets / Required data / Location: path and name of data file (.nc)
+# add under Datasets / Required data / ID: random string
+# click on Save configuration
+# Reload page until State: LOADING changes to State: READY
+# results can be found under: ncWMS Frontpage
+```
+
 The docker file documented in the ncWMS documentation is not available on dockerhub, so we used [this dockerfile](https://hub.docker.com/r/pamtrak06/ncwms/).
 
 
