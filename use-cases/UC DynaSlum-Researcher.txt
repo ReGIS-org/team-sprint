@@ -1,0 +1,35 @@
+DynaSlum - Researcher
+
+Description:
+Scientists want to create, improve and expand data-driven models of slum dynamics. 
+The researcher should have some data on the slum, create and fit a model, and validate the model with held-back data.
+
+Actors:
+- Social scientists
+- Social geographers
+- Public health Scientists
+
+Preconditions:
+- Slum data
+- Range of possible model parameters/models
+- Choice of validation metrics
+
+Flow:
+- Upload slum data
+- Set model parameters
+- Run simulation
+- Display prediction with ground truth
+- Display computed validation metrics (error percentage)
+
+Exceptions:
+- Slum data in wrong format
+- Impossible model parameter
+
+Postconditions:
+- Display model prediction on map
+- Display difference between prediction and ground truth
+- Display overlap between prediction and ground truth
+- Display model validation metrics
+
+Links:
+- 
