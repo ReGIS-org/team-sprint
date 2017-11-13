@@ -1,19 +1,21 @@
-DynaSlum - Beleidsmaker
+DynaSlum - Policy maker
+
+Description:
+
 
 Actors:
-Wetenschappers probeert modellen te verbeteren. Data is een ground truth census: wie woont er, wat verdienen ze, religie. 
-Op basis van een slum-model probeert wetenschapper te voorspellen hoe de slum verandert (en kan het valideren a.h.v. census data). 
+Researchers that want to develop slum dynamics prediction models. The model should make predictions based on given data and the reseachers should have additional data available to validate the model.
 
 Preconditions:
 - Validated model
-- Beleid parameters
-- Visualizatiesettings
-- Beleidsmaker kennis van model/beleidparameters
+- Policy parameters
+- Visualisation settings
+- Should the policy maker have knowledge of the models?
 
 Flow:
 - Load validated model
-- Set beleid parameters
-- Run simulatie
+- Set policy parameters
+- Run simulation
 - Display predictie
 - Display verandering sinds begin (groei over tijd)
 

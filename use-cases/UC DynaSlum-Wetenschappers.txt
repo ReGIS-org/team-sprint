@@ -1,5 +1,6 @@
 DynaSlum - Wetenschapper
 
+Description:
 
 Actors:
 Wetenschappers probeert modellen te verbeteren. Data is een ground truth census: wie woont er, wat verdienen ze, religie. 
@@ -23,3 +24,5 @@ Exceptions:
 Postconditions:
 Visual analysis of prediction with ground truth on map
 - Diff plaatje van simulatie en census data
+
+Links:
