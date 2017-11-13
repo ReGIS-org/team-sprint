@@ -21,12 +21,12 @@ $ java -jar ncWMS2-standalone.jar
 
 ```bash
 $ docker run -d -p 80:8080 -p 443:8443 guygriffiths/ncwms
-# open in a web browser: localhost/ncWMS
-# to add new data: click on Admin interface (ncwms/ncwns)
-# other steps: like steps 3-7 above
+# 1. open in a web browser: localhost/ncWMS
+# 2. to add new data: click on Admin interface (ncwms/ncwns)
+# and proceed as mentioned in steps 3-7 above
 ```
 
-Or with another [dockerfile](https://github.com/axiom-data-science/docker-ncwms).
+Or with another [dockerfile](https://github.com/axiom-data-science/docker-ncwms):
 
 `docker pull axiom/docker-ncwms`
 
@@ -40,6 +40,19 @@ $ docker run \
  
 Note that saved data stored on a docker container may disappear after the container is stopped.
 
+## Starting ncWMS with tomcat and a war file
+
+```bash
+$ cd /var/lib/tomcat/webapps
+$ sudo curl -L -O https://github.com/Reading-eScience-Centre/ncwms/releases/download/ncwms-2.2.11/ncWMS2.war
+# 1. add the following two lines to /etc/tomcat/tomcat-users.xml above </tomcat-users>
+<role rolename="ncWMS-admin" />
+<user username="admin" password="ncWMS-password" roles="ncWMS-admin"/>
+$ sudo service tomcat start
+# 2. open in w webbrowser: http://localhost:8080/ncWMS2/
+# 3. to add new data: click on Admin interface (admin/ncWMS-password)
+# and proceed as mentioned in steps 3-7 in the jar file instructions above
+```
 ## Alongside WebDAV docker
 The paths to data can also be external URLs. For example, to host and read from a webdav server:
 
