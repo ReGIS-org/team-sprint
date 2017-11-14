@@ -35,6 +35,7 @@ $ docker run \
     -d \
     -p 80:8080 \
     -p 443:8443 \
+    -v /path/to/configdir:/usr/local/tomcat/.ncWMS2
     axiom/docker-ncwms
  ```
  
@@ -60,7 +61,7 @@ The paths to data can also be external URLs. For example, to host and read from 
 docker run  -d -e USERNAME=webdav -e PASSWORD=webdav -v /path/to/data/:/var/webdav -p 8888:80 morrisjobke/webdav
 ```
 
-Then the URL to a file on the web server is `http://webdav:webdav@172.17.42.1:8888/webdav/data.nc`
+Then the URL to a file on the web server is `http://webdav:webdav@172.17.42.1:8888/webdav/data.nc`. (The ip adress `172.17.42.1` is the adress used for the host inside the docker container).
 
 ## WMS API
 The API provided by ncWMS includes the default WMS specification, and additional parameters that control the visuals, e.g. the colormap. The API specification can be found [here](https://reading-escience-centre.gitbooks.io/ncwms-user-guide/content/04-usage.html). 
