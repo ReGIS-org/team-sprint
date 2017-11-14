@@ -1,19 +1,38 @@
-Use Case eEcology
+Use Cases eEcology - Stefan Verhoeven
+
 
 Description:
-Gemaakt annotaties visualizeren + gedrag annoteren
+The goal of eEcology is understanding behavior of different species, types and genders of birds.
+Birds are tagged with GPS tracking devices to track their movement and behaviour over space and time.
 
-Actors:
-Ornitholoog wil gedrag van vogel classificeren/annoteren op basis van accelerometer
+
+Actor:
+Biologist focused on behaviour who wants to annotate gps tracking data 
+
 
 Preconditions:
-- Bird data
+- Aivalable bird tracking data in csv format
+  with timestamp, altitude, latitude, longitude, speed2d, device-id, direction, birdname 
+- Trained classifier
 
 Flow:
+- user uploads data in system
+- system stores data in database
+- database interprets and annotates data using classifier
+- annotated data is visualized in 'data view' (graphs, charts) and 'map view'
+- user checks and adapts annotations  
+- annotation is stored in database 
+- user publishes annotated data
+- user provides feedback to classifier?
 
 Exceptions:
+- Unsupported data formats
+- Incomplete geo information
 
 Postconditions:
+- Data is displayed on map
+- User is able to adapts annotations  
+
 - Visualizatie van pad 
 - Kleuren voor herkend gedrag in pad
 
