@@ -1,19 +1,36 @@
-Use Case CartoDB
+Use Case CartoDB - Stefan Verhoeven
 
 Description:
-Van tabel naar kaart
-Visualizatie van elementen
-Knop met analyse
+Visualization and analysis of bird tracking data
 
 Actor:
+Scientist
 
 Preconditions:
+Aivalable bird tracking data in csv format
+with timestamp, altitude, latitude, longitude, speed2d, device-id, direction, birdname 
+
 
 Flow:
+- user uploads data in system
+- system stores data in database
+- database interprets data (?)
+- user chooses basemap (could be open source map)
+- user specifies visualization features, e.g. , type of map layer, type of marker 
+- user specifies which (label/name or column) data to be displayed
+- user specifies how to visualize distribution of data values, e.g. by color or marker size
+- user selects data points and provides extra information by an info window
+- user adds annotation items to the map
+- user publishes map
 
 Exceptions:
+- Unsupported data formats
+- Incomplete geo information
 
 Postconditions:
+- Data is displayed on map
+- User is able to specify visualization
+
 
 Links:
 - https://carto.com/builder/
