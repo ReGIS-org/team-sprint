@@ -1,0 +1,33 @@
+Use Case Flagship
+
+Description:
+Local geopatches are studied in more detail than global areas and the collection of total local models should be more informative than the best global model. 
+A researcher should be able to submit data or a model to a particular location. In cases of benchmarks, Regis should run a submitted model on the available data. 
+
+Actors:
+- Hydrologist
+- Geologist
+
+Preconditions
+- Dataset (soil model)
+- Model (soil dynamics simulation)
+
+Flow:
+- Select tile
+- Supply model
+- Regis runs simulation
+- Display results
+- Compare results to known info for tile
+- Suggest other models/tiles
+
+Exceptions:
+- Corrupted data
+- Model won't run
+
+Postconditions:
+- Visualizations of results
+
+Links:
+- 
+
+

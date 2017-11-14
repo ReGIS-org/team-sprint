@@ -21,15 +21,24 @@ Flow:
 - Display prediction
 - Display change since t=0
 
+- Change policy parameters
+- Rerun simulation
+- Display prediction
+- Display change since t=1
+- Display change since t=0
+- Display provenance
+
 Exceptions:
 - Unfit model
 - Impossible combination of policy parameters
+- Impossible sequence of policy parameters
 
 Postconditions:
 - Show shape of simulated slum
 - Show slum composition difference
 - Show slum shape difference
 - Show migration between slums
+- Show sequences of policy parameters
 
 Links:
 - https://www.esciencecenter.nl/project/dynaslum

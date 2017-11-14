@@ -17,7 +17,6 @@ Postconditions:
 - Visualizatie van pad 
 - Kleuren voor herkend gedrag in pad
 
-
 Links:
 - https://github.com/NLeSC/eEcology-Annotation-UI
 - http://nlesc.github.io/eEcology-Annotation-UI/demo/demo-na.html

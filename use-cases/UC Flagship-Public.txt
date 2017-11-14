@@ -1,0 +1,25 @@
+Use Case Flagship
+
+Description:
+Curse of locality: despite advances in modelling, specific models/data are more informative for a location on the map than more general model/data. Wikipedia voor modellen
+Researchers can select local geodata patches and claim it. They thereby state that they have valuable information on that area in the form of a model or dataset. A Common Vocabulary will be needed. 
+
+Actors:
+Public user
+
+Preconditions:
+- None
+
+Flow:
+- Click on tile
+- Select which info to display
+- Visualize filtered predictions/results/info for tile
+
+Exceptions:
+- Impossible filter (combination) selection 
+
+Postconditions:
+- Visualization of filtered info
+
+Links:
+- 
