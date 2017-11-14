@@ -1,0 +1,35 @@
+DynaSlum - Policy maker
+
+Description:
+Development of policies for slum formation and composition. A policy maker can change parameters of a proposed policy and simulate its effect based on a loaded model (that has been validated before). The changes on the slum since the change in the policy should be visualized as a result.
+
+Actors:
+- Government/County/City official
+- Urban planner
+- Economic developer
+
+Preconditions:
+- Validated model
+- Simulation settings (time, etc.)
+- Visualisation settings (shape-difference map, composition-difference map)
+- Range of possible policy parameters (should the policy maker have knowledge of the models?)
+
+Flow:
+- Load validated model
+- Set policy parameters
+- Run simulation
+- Display prediction
+- Display change since t=0
+
+Exceptions:
+- Unfit model
+- Impossible combination of policy parameters
+
+Postconditions:
+- Show shape of simulated slum
+- Show slum composition difference
+- Show slum shape difference
+- Show migration between slums
+
+Links:
+- https://www.esciencecenter.nl/project/dynaslum
