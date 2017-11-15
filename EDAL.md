@@ -74,3 +74,80 @@ ncWMS provides an admin interface where you can add data. The admin page talks t
 An example of how the catalogue is being used to update the config, including adding files, can be found in the [NcwmsAdminServlet class](https://github.com/Reading-eScience-Centre/ncwms/blob/master/src/main/java/uk/ac/rdg/resc/edal/ncwms/NcwmsAdminServlet.java#L254). 
 
 Unfortunately, this NcwmsAdminServlet handles all admin stuff in one call. This means that we cannot request it to add a new file, without sending a complete form that also contains e.g. the existing datasets. We probably have to modify the code in NcwmsAdminServlet.
+
+We have the following paramters for the services from the admin servlet:
+```
+addData
+	dataset.new{i}.id
+	dataset.new{i}.title
+	dataset.new{i}.location
+	dataset.new{i}.reader
+	dataset.new{i}.disabled
+	dataset.new{i}.queryable
+	dataset.new{i}.updateinterval
+	dataset.new{i}.moreinfo
+	dataset.new{i}.copyright
+	
+updateData
+	dataset.{id}.id
+	dataset.{id}.title
+	dataset.{id}.location
+	dataset.{id}.reader
+	dataset.{id}.disabled
+	dataset.{id}.queryable
+	dataset.{id}.downloadable
+	dataset.{id}.updateinterval
+	dataset.{id}.moreinfo
+	dataset.{id}.copyright
+	dataset.{id}.metadataUrl
+	dataset.{id}.metadataDesc
+	dataset.{id}.metadataMimetype
+	dataset.{id}.refresh
+	
+removeData
+	dataset.{id}.remove
+	
+addDynamicService
+	dynamicService.new{i}.alias
+	dynamicService.new{i}.servicePath
+	dynamicService.new{i}.datasetIdMatch
+	dynamicService.new{i}.moreinfo
+	dynamicService.new{i}.copyright
+	dynamicService.new{i}.disabled
+	dynamicService.new{i}.queryable
+	dynamicService.new{i}.reader
+	
+updateDynamicService
+	dynamicService.{alias}.alias
+	dynamicService.{alias}.servicePath
+	dynamicService.{alias}.datasetIdMatch
+	dynamicService.{alias}.moreinfo
+	dynamicService.{alias}.copyright
+	dynamicService.{alias}.disabled
+	dynamicService.{alias}.queryable
+	dynamicService.{alias}.reader
+
+removeDynamicService
+	dynamicService.{alias}.remove
+	
+configServer
+	server.title
+	server.abstract
+	server.keywords
+	server.url
+	server.maximagewidth
+	server.maximageheight
+	server.allowfeatureinfo
+	server.allowglobalcapabilities
+	
+configContact
+	contact.name
+	contact.org
+	contact.tel
+	contact.email
+	
+configCache
+	cache.enable
+	cache.inMemorySizeMB
+	cache.elementLifetimeMinutes
+```
