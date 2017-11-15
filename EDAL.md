@@ -17,6 +17,8 @@ $ java -jar ncWMS2-standalone.jar
 # 7. results can be found under: ncWMS Frontpage
 ```
 
+When we ran ncWMS in the standalone version, the Godiva interface did not work.
+
 ## Starting ncWMS with docker
 
 ```bash
